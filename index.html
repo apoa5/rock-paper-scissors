@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" defer></script>
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="javascript.js"></script>
+    <div class="header">ROCK PAPER SCISSORS</div>
+    <div class="roundWinner">
+        Select Rock, Paper, or Scissors to start game!
+    </div>
+    <div class="content">
+        <div class="gameArea">
+            <div class="userGameArea">
+                <div class="rock">
+                    <img src="assets/rock.png" alt="Rock">
+                </div>
+                <div class="paper">
+                    <img src="assets/paper.png" alt="Paper">
+                </div>
+                <div class="scissors">
+                    <img src="assets/scissors.png" alt="Scissors">
+                </div>
+            </div>
+            <div class="computerGameArea">
+                <div class="computer">
+                    <img src="assets/desktop.png" alt="Computer">
+                </div>
+            </div>
+        </div>
+        
+        <div class="scoreArea">
+            <div class="userScoreArea" id="userScoreArea">
+                Your Score
+            <div class="userScore">
+                0
+            </div>
+            </div>
+            <div class="nextRound" id="nextRound" title="Click to play next round">
+                <div class="nextRoundIcon">
+                    <img src="assets/right-arrow.png" alt="Next round">
+                </div>
+            </div>
+            <div class="computerScoreArea" id="computerScoreArea">
+                Computer Score
+            <div class="computerScore">
+                0
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

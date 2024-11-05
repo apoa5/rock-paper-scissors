@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Chewy", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: gray;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+}
+
+.gameArea {
+    display: flex;
+    flex: 8;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.scoreArea {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.userGameArea {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 45%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.computerGameArea {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: 45%;
+    border-radius: 20px;
+}
+
+.userScoreArea, .computerScoreArea{
+    background-color: lightgray;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.userScore, .computerScore {
+    font-size: 50px;
+}
+
+.nextRound {
+    width: 20%;
+    border-radius: 20px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rock,
+.paper,
+.scissors {
+   display: flex;
+   flex: 1;
+   cursor: pointer;
+   transition: transform 0.15s, box-shadow 0.1s;
+}
+
+.computer {
+    cursor: pointer;
+    transition: transform 0.15s, boxshadow 0.1s;
+}
+
+.nextRoundIcon {
+    cursor: pointer;
+    transition: transform 0.15s, boxshadow 0.1s;
+}
+
+.rock img, 
+.paper img, 
+.scissors img, 
+.computer img,
+.nextRound img{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover,
+.computer:hover,
+.nextRoundIcon:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 40x 10px rgba(0,0,0,0.2);
+}
+
+.rock:active, 
+.paper:active,
+.scissors:active,
+.computer:active,
+.nextRoundIcon:active{
+    transform: scale(0.95);
+}
+
+.centered-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;/* Ensures it takes up the entire height of the parent div */
+}
+
+.centered-choice img {
+    width: 150px; /* Adjust as needed to enlarge */
+    height: auto;
+}
+
+.roundWinner {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
