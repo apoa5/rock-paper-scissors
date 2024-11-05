@@ -1,4 +1,4 @@
-
+//Declare global variables
 let humanScore = 0;
 let computerScore = 0;
 let roundsPlayed = 0;
@@ -50,7 +50,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-// Play a single round, update scores, and prepare for the next round
 // Play a single round, update scores, and prepare for the next round
 function playRound(human, computer) {
     roundWinner.classList.add('roundWinner');
